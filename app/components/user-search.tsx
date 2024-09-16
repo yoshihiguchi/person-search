@@ -1,19 +1,12 @@
-// app/components/user-search.tsx
 'use client'
 
 import { useState } from 'react'
 import AsyncSelect from 'react-select/async'
 import { searchUsers } from '@/app/actions/actions'
 import { UserCard } from './user-card'
+import { User } from '@/app/actions/schemas'
 
-interface User {
-  id: string
-  name: string
-  phoneNumber: string
-  email?: string
-  location?: string
-}
-
+// Option type remains the same
 interface Option {
   value: string
   label: string
